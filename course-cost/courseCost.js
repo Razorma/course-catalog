@@ -56,3 +56,5 @@ function courseCost(courseCode, startDateStr){
 	    amountDue : courseCost
     }
 }
+let Course = courseCost("p1", "2023-05-32")
+console.log(Course.status)

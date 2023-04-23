@@ -20,6 +20,14 @@ describe("courseCost function", function() {
         const cost = courseCost("r1", "2023-05-21")
         assert.equal(5675, cost.cost) // 
     });
+    it("should return invalid code if course code is invalid", function(){
+        const Course = courseCost("y1", "2023-05-21")
+        assert.equal(Course.status, "Invalid code") // 
+    });
+    it("invalid dates should return a status of: `Invalid day`", function(){
+        const Course = courseCost("r1", "2023-05-32")
+        assert.equal(Course.status, "Invalid day") // 
+    });
    
    
 

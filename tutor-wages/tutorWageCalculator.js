@@ -13,7 +13,6 @@ function tutorWageCalculator(timeSheet,level){
         hours += parseInt(sheet[i])
         
     }
-    console.log(hours)
     //create a condition to tell if what level it is
     if(level === 1){
         return (hours * 75)
