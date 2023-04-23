@@ -28,7 +28,4 @@ describe("courseCost function", function() {
         const Course = courseCost("r1", "2023-05-32")
         assert.equal(Course.status, "Invalid day") // 
     });
-   
-   
-
 })
